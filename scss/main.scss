@@ -23,6 +23,10 @@ p {
   margin: 0;
 }
 
+section {
+  padding: 7rem 0;
+}
+
 .container {
   width: 85%;
   max-width: 65em;
@@ -70,4 +74,11 @@ p {
     background-repeat: no-repeat;
     background-position: center center;
   }
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  line-height: 1;
+  color: #17353d;
 }
