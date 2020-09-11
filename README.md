@@ -1,2 +1,2 @@
 # home-of-kics
-A shoes store lending page created using pure HTML and CSS.
+A shoes store landing page created using pure HTML and CSS.
