@@ -75,6 +75,14 @@ section {
   text-transform: uppercase;
 }
 
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  line-height: 1;
+  color: #17353d;
+  margin-bottom: 5rem;
+}
+
 .hero {
   text-align: center;
   padding: 15em 0;
@@ -88,10 +96,18 @@ section {
   }
 }
 
-.section-title {
-  text-align: center;
-  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
-  line-height: 1;
-  color: #17353d;
-  margin-bottom: 5rem;
+.featured {
+  background: #eee;
+
+  &-item {
+    display: block;
+    position: relative;
+    transform: scale(0.85);
+    transition: transform 250ms ease-in-out;
+
+    &:hover,
+    &focus {
+      transform: scale(1);
+    }
+  }
 }
