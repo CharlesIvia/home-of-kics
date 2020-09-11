@@ -122,10 +122,41 @@ section {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .featured-item:hover, .featured-itemfocus {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.featured-item:hover .featured-details, .featured-itemfocus .featured-details {
+  opacity: 1;
+}
+
+.featured-item::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 100% 100% 0 0;
+  background: #2193b0;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.featured-details {
+  opacity: 0;
+  -webkit-transform: opacity 250ms linear;
+          transform: opacity 250ms linear;
+}
+
+.featured-details span {
+  display: block;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 /*# sourceMappingURL=main.css.map */
